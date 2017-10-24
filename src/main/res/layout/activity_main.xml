@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.nava.matheus.myapplication.MainActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="185dp"
+        android:src="@drawable/userIcon"
+        android:background="@color/backUser"
+        />
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp">
+
+        <TableRow
+            android:gravity="center"
+            android:layout_marginTop="10dp"
+            android:weightSum="12">
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="25dp"
+                android:src="@drawable/googleIcon"
+                android:layout_weight="2"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_weight="8">
+
+                <TextView
+                    android:id="@+id/text"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Salvar em"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@+id/text"
+                    android:text="matheus.rise76@gmail.com"/>
+
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="25dp"
+                android:src="@drawable/ic_keyboard_arrow_down_black_24dp"
+                android:layout_weight="2"/>
+
+        </TableRow>
+
+        <TableRow
+            android:gravity="center"
+            android:layout_marginTop="10dp"
+            android:weightSum="12">
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="25dp"
+                android:src="@drawable/ic_person_black_24dp"
+                android:layout_weight="2"/>
+
+            <EditText
+                android:hint="Nome"
+                android:layout_weight="8"/>
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="25dp"
+                android:src="@drawable/ic_keyboard_arrow_down_black_24dp"
+                android:layout_weight="2"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:weightSum="12">
+            <Space android:layout_weight="2"/>
+            <EditText
+                android:hint="Sobrenome"
+                android:layout_weight="8"/>
+            <Space android:layout_weight="2"/>
+
+        </TableRow>
+
+        <TableRow
+            android:gravity="center"
+            android:layout_marginTop="10dp"
+            android:weightSum="12">
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="25dp"
+                android:src="@drawable/ic_call_black_24dp"
+                android:layout_weight="2"/>
+            <EditText
+                android:hint="Telefone"
+                android:layout_weight="8"/>
+            <Space android:layout_weight="2"/>
+        </TableRow>
+
+        <TableRow
+            android:gravity="center"
+            android:layout_marginTop="10dp"
+            android:weightSum="12">
+            <Space android:layout_weight="2"/>
+            <TextView
+                android:hint="Celular"
+                android:layout_marginLeft="4dp"
+                android:textSize="19sp"
+                android:layout_weight="0"/>
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="25dp"
+                android:src="@drawable/ic_arrow_drop_down_black_24dp"
+                android:layout_weight="10"
+                android:layout_gravity="left"/>
+        </TableRow>
+
+        <TableRow
+            android:gravity="center"
+            android:layout_marginTop="10dp"
+            android:weightSum="12">
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="25dp"
+                android:src="@drawable/ic_local_post_office_black_24dp"
+                android:layout_weight="2"
+                />
+            <EditText
+                android:hint="E-mail"
+                android:layout_weight="8"/>
+            <Space
+                android:layout_weight="2"/>
+        </TableRow>
+
+        <TableRow
+            android:gravity="center"
+            android:layout_marginTop="10dp"
+            android:weightSum="12">
+            <Space android:layout_weight="2"/>
+            <TextView android:hint="Residencial"
+                android:layout_marginLeft="4dp"
+                android:textSize="19sp"
+                android:layout_weight="0"/>
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="25dp"
+                android:src="@drawable/ic_arrow_drop_down_black_24dp"
+                android:layout_weight="10"
+                android:layout_gravity="left"/>
+        </TableRow>
+
+    </TableLayout>
+
+
+</LinearLayout>
